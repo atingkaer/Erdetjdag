@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #e0f0ff, #ffffff);
+    color: #003366;
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #007BFF;
+    color: white;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .countdown {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  #timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-top: 0.5rem;
+  }
+
+  .card {
+    margin: 1.5rem auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 2px solid #cce6ff;
+  }
+
+  .card-header {
+    cursor: pointer;
+    background: #e6f0ff;
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s;
+  }
+
+  .card-header:hover {
+    background: #d9ecff;
+  }
+
+  .card-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.2rem;
+    background: #f9fcff;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+  }
+
+  .card-content.open {
+    padding: 1.2rem;
+  }
+
+  .card-content.open p, 
+  .card-content.open ul, 
+  .card-content.open h3, 
+  .card-content.open h4 {
+    margin-top: 0;
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+
+  .card-header.open .rotate {
+    transform: rotate(270deg);
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  @media (max-width: 600px) {
+    header { font-size: 2rem; }
+    #timer { font-size: 1.5rem; }
+    .card-header { font-size: 1rem; }
+  }
+
+  /* For better readability of long sections */
+  .card-content h3, .card-content h4 {
+    margin-top: 1rem;
+    color: #004080;
+  }
+
+  .card-content ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+  }
+
+  .card-content strong {
+    color: #003366;
+  }
