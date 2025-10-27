@@ -8,6 +8,7 @@ jobs:
   web-deploy: 
     name: Deploy!
     runs-on: ubuntu-latest
+    environment: production
     steps:
     - name: Get latest code
       uses: actions/checkout@v3
@@ -15,7 +16,7 @@ jobs:
     - name: Upload via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.6
       with:
-          server: web10.curanet.dk
+          server: ${{ vars.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist
