@@ -40,13 +40,45 @@
 
   <div class="card">
     <div class="card-header">
-      <span><i class="fa-solid fa-snowflake"></i> Historien bag</span>
+      <span>🍻 J-dag på byens pubber</span>
       <i class="fa-solid fa-chevron-right rotate"></i>
     </div>
     <div class="card-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisl vel tincidunt fermentum, risus orci condimentum felis, ut interdum purus libero in urna.</p>
+      <p>
+        Her samler vi opslag fra pubber, barer og bryggerier, der annoncerer deres J-dag-events i København og resten af landet.
+        <br>🎅 Skål og glædelig J-dag!
+      </p>
+  
+      <!-- 🔹 Facebook Post Embeds (Easy to Update) -->
+      <div class="fb-posts">
+        <!-- Example 1 -->
+        <div class="fb-post" 
+             data-href="https://www.facebook.com/TheDublinerCopenhagen/posts/1234567890" 
+             data-width="500" 
+             data-show-text="true">
+        </div>
+  
+        <!-- Example 2 -->
+        <div class="fb-post" 
+             data-href="https://www.facebook.com/MikkellerBar/posts/987654321" 
+             data-width="500" 
+             data-show-text="true">
+        </div>
+  
+        <!-- Example 3 -->
+        <div class="fb-post" 
+             data-href="https://www.facebook.com/WarpigsBrewpub/posts/24681012" 
+             data-width="500" 
+             data-show-text="true">
+        </div>
+      </div>
+  
+      <p style="margin-top: 1rem; font-style: italic;">
+        Vil du have din pub med her? Send et link til <a href="mailto:j-dag@eksempel.dk">j-dag@eksempel.dk</a> 🎁
+      </p>
     </div>
   </div>
+  
 
   <div class="card">
     <div class="card-header">
@@ -205,6 +237,11 @@
         }
       });
     });
+  </script>
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v21.0">
   </script>
 
 </body>
