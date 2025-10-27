@@ -15,7 +15,7 @@ jobs:
     - name: Upload via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.6
       with:
-          server: ${{ secrets.FTP_HOST }}
+          server: web10.curanet.dk
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist
