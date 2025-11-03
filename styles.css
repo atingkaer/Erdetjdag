@@ -97,7 +97,7 @@ body {
   }
 
   /* For better readability of long sections */
-  .card-content h3, .card-content h4 {
+  .card-content h3{
     margin-top: 1rem;
     color: #004080;
   }
@@ -108,5 +108,21 @@ body {
 
   .card-content strong {
     color: #003366;
+  }
+
+  .card-content h4 {
+    margin-top: 1.2rem;
+    color: #004080;
+  }
+  
+  .card-content p {
+    margin: 0.4rem 0 0.8rem;
+    line-height: 1.6;
+  }
+  
+  .card-content hr {
+    border: none;
+    border-top: 2px dashed #cce6ff;
+    margin: 1rem 0;
   }
   
